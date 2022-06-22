@@ -1,8 +1,7 @@
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  background-color:lightskyblue;
+  background-color: lightskyblue;
   min-height: 100vh;
 }
 
@@ -31,6 +30,10 @@
 .todo-form span {
   display: flex;
   justify-content: space-between;
+}
+
+.todo-form p {
+  text-align: center;
 }
 
 .todo-form input {

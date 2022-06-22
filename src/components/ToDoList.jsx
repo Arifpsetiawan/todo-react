@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react"
 
-const ToDoList = () => {
+const ToDoList = ({ todos }) => {
   return (
-    <div className='todo-list'>
+    <div className="todo-list">
       <ul>
-        <li>Menyapu</li>
+        {todos.map((item, index) => {
+          return <li key={index}>{item}</li>
+        })}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default ToDoList;
+export default ToDoList
